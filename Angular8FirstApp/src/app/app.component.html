@@ -18,6 +18,12 @@
         <hr>
         <app-warning-alert></app-warning-alert>
         <app-success-alert></app-success-alert>
+        <hr>
+        <label>Exercice Databinding</label>
+        <p><label>Username</label></p>
+        <input type="text" class="form-control" [(ngModel)]="username">
+        <p>{{username}}</p>
+        <button class="bnt btn-primary" [disabled]="username ===''" (click)="username = ''">Reset Username</button>
     </div>
   </div>
 </div>

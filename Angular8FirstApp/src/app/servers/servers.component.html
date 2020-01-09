@@ -8,7 +8,6 @@
     class="form-control"
     [(ngModel)]="serverName"
 >
-
 <label>Server Name is ===> {{serverName}}</label>
 <p>DataBinding String interpolation and Property Binding</p>
 <button class="btn btn-primary" [disabled]="!allowNewServer"(dblclick)="onCreateServer()">Add Server</button>
@@ -20,4 +19,6 @@
 <p>{{serverCreationStatus}}</p>
 <app-server></app-server>
 <app-server></app-server>
+<hr>
+
 
