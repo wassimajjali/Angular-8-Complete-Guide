@@ -1,10 +1,15 @@
 <label>Enter a Server Name</label>
+<!--<input 
+    type="text"
+    class="form-control"
+    (input)="onUpdateServerName($event)">-->
 <input 
     type="text"
     class="form-control"
-    (input)="onUpdateServerName($event)">
-    <label>Server Name is ===> {{serverName}}</label>
+    [(ngModel)]="serverName"
+>
 
+<label>Server Name is ===> {{serverName}}</label>
 <p>DataBinding String interpolation and Property Binding</p>
 <button class="btn btn-primary" [disabled]="!allowNewServer"(dblclick)="onCreateServer()">Add Server</button>
 <p>The Status Button is {{allowNewServer}}</p>
