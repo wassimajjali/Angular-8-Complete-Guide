@@ -1,5 +1,10 @@
 <p>DataBinding String interpolation and Property Binding</p>
-<button class="btn btn-primary" [disabled]="!AllowNewServer">Add Server</button>
+<button class="btn btn-primary" [disabled]="!allowNewServer">Add Server</button>
+<p>The Status Button is {{allowNewServer}}</p>
+<p>
+    The Status Button (with innerText) string interpolation is 
+</p>
+<p [innerText]="allowNewServer"></p>
 <app-server></app-server>
 <app-server></app-server>
 

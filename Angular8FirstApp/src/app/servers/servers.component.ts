@@ -15,10 +15,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent implements OnInit {
-  AllowNewServer = false;
+  allowNewServer = false;
   constructor() {
     setTimeout(()=> {
-      this.AllowNewServer= true
+      this.allowNewServer= true
     },2000);
    }
 
