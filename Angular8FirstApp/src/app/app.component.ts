@@ -15,4 +15,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   //name = 'wassim';
+  username='';
+  showSecret = false;
+  log = [];
+  onToogleDetails(){
+    this.showSecret = !this.showSecret;
+    this.log.push(this.log.length+1);
+
+  }
 }

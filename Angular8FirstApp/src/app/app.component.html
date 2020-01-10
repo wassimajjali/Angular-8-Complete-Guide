@@ -6,6 +6,12 @@
   <div class="row">
     <div class="col-xs-12">
       <h3>Component Run </h3>
+      <button class="btn btn-primary" (click)="onToogleDetails()">Details Display</button>
+      <p *ngIf="showSecret">Secret password = tuna</p>
+      <div 
+        *ngFor="let logList of log"
+        [ngStyle]="{backgroundColor: logList >=3 ? 'blue':'yellow'}"
+      >{{logList}}</div>
         <hr>
         <!-- Basic slector-->
         <app-servers></app-servers> 
