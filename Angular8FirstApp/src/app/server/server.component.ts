@@ -7,8 +7,15 @@ import { Component } from '@angular/core';
 export class ServerComponent{
     serverId: number = 10;
     serverStatus: String = 'isOffline';
+
+    constructor(){
+        this.serverStatus=Math.random()<0.5 ? 'onLine': 'isOffline';
+    }
     getServerStatus()
     {
         return this.serverStatus;
+    }
+    getColor(){
+     return this.serverStatus ===   'onLine' ? 'green' :'red';
     }
 }
